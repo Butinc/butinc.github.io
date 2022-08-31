@@ -3,6 +3,7 @@ USER=ubuntu
 HOST=16.163.24.23
 DIR=//var/www/html/butinc/public/
 
-hugo && rsync -avz --delete public/ ${USER}@${HOST}:${DIR}
+cd ~/hugo/butinc
+hugo -D && rsync -avz --delete public/ ${USER}@${HOST}:${DIR}
 
 exit 0

@@ -1,4 +1,31 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
+baseURL = 'http://v.butinc7.tk/'
+languageCode = 'zh-CN'
+defaultContentLanguage = 'zh'
 title = 'My New Hugo Site'
-theme = "cupper-hugo-theme"
+theme = 'cupper-hugo-theme'
+
+[taxonomies]
+tag = 'tags'
+
+[param]
+description = 'An accessibility-friendly Hugo theme, ported from the [original Cupper](https://github.com/ThePacielloGroup/cupper) project.'
+homeMetaContent = 'An accessibility-friendly Hugo theme, ported from the original Cupper project.'
+dateFormat = 2022-08-31
+search = true
+defaultDarkTheme = true
+
+[menu]
+[[nav]]
+name = 'Home'
+url = '/'
+weight = 1
+
+[[nav]]
+name = 'Blog'
+url = '/post/'
+weight = 2
+
+[[nav]]
+name = 'About'
+url = '/about/'
+weight = 3
